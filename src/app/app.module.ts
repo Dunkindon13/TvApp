@@ -7,6 +7,12 @@ import { SearchComponent } from './app/views/search/search.component';
 import { SeasonsComponent } from './views/seasons/seasons.component';
 import { ShowsComponent } from './views/shows/shows.component';
 import { EpisodesComponent } from './views/episodes/episodes.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { EpisodesComponent } from './views/episodes/episodes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatExpansionModule,
+    MatListModule,
+    FlexLayoutModule,
+    MatDividerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
